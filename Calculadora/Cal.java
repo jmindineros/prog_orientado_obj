@@ -4,7 +4,7 @@ public class Cal {
 
 
     // constructos
-    public Calculadora(int valor1, int valor2) {
+    public Cal(int valor1, int valor2) {
         this.valor2 = valor2;
         this.valor1 = valor1;
 
@@ -22,13 +22,13 @@ public class Cal {
         int multiplicacion= this.valor1 * this.valor2;
         return multiplicacion;
     }
-    public Double division(){
-        Double division= (Double) this.valor1 / (Double) this.valor2;
+    public double division(){
+        Double division= (double) valor1 / valor2;
         return division;
     }
-    public int potencia(){
-        int potencia= this.valor1 * this.valor1;
-        return potencia;
+    public double potencia(){
+
+        return Math.pow(valor2, valor1);
     }
 
 }
